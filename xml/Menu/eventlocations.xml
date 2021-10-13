@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/eventlocations</path>
+    <page_callback>CRM_EventLocations_Page_EventLocations</page_callback>
+    <title>Event Locations</title>
+    <access_arguments>administer Event Locations</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/ajax/getallEventLocations</path>
+    <page_callback>CRM_EventLocations_Utils::getAllLocations</page_callback>
+    <title>Event Locations</title>
+    <access_arguments>administer Event Locations</access_arguments>
+  </item>
+</menu>

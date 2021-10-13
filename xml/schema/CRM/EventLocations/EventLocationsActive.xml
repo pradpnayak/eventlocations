@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/EventLocations</base>
+  <class>EventLocationsActive</class>
+  <name>civicrm_loc_block_entity</name>
+  <comment></comment>
+  <add>1.0</add>
+  <log>true</log>
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique  ID</comment>
+    <add>1.0</add>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+  <field>
+    <name>loc_block_id</name>
+    <title>Loc Block id</title>
+    <type>int unsigned</type>
+    <comment>FK to Loc Block ID.</comment>
+    <add>1.0</add>
+  </field>
+  <foreignKey>
+    <name>loc_block_id</name>
+    <table>civicrm_loc_block</table>
+    <key>id</key>
+    <add>1.0</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+  <field>
+    <name>is_active</name>
+    <title>Is Active</title>
+    <type>boolean</type>
+    <comment>Is Active</comment>
+    <required>TRUE</required>
+    <export>true</export>
+    <default>1</default>
+    <add>1.0</add>
+  </field>
+</table>
